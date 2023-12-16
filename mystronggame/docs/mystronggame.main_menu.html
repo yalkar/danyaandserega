@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>mystronggame.main_menu</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          mystronggame <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div class="hint" id="search-help-box">
+          <p class="rst-last">
+      
+            Search bar offers the following options:
+            <ul>   
+                <li>
+                  <strong>Term presence.</strong> The below example searches for documents that 
+                    must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                </li> 
+
+                <li>
+                  <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                </li> 
+
+                <li>
+                  <strong>Search in specific fields.</strong> The following search matches all objects 
+                  in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+
+                  <p>
+                    Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                    Last two fields are only applicable if "search in docstrings" is enabled.
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Fuzzy matches.</strong> The following search matches all documents 
+                  that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                </li>
+            </ul>
+
+          </p>
+        </div>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 8px;">
+          <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="mystronggame.main_menu.html" class="internal-link" title="This module">main<wbr></wbr>_menu</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#change_vide_mode" class="internal-link" title="mystronggame.main_menu.change_vide_mode">change<wbr></wbr>_vide<wbr></wbr>_mode</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#fade" class="internal-link" title="mystronggame.main_menu.fade">fade</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#main_menu" class="internal-link" title="mystronggame.main_menu.main_menu">main<wbr></wbr>_menu</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#new_game" class="internal-link" title="mystronggame.main_menu.new_game">new<wbr></wbr>_game</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#settings_menu" class="internal-link" title="mystronggame.main_menu.settings_menu">settings<wbr></wbr>_menu</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#video_settings_menu" class="internal-link" title="mystronggame.main_menu.video_settings_menu">video<wbr></wbr>_settings<wbr></wbr>_menu</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#MAX_FPS" class="internal-link" title="mystronggame.main_menu.MAX_FPS">MAX<wbr></wbr>_FPS</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#clock" class="internal-link" title="mystronggame.main_menu.clock">clock</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#cursor" class="internal-link" title="mystronggame.main_menu.cursor">cursor</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#HEIGHT" class="internal-link" title="mystronggame.main_menu.HEIGHT">HEIGHT</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#main_background" class="internal-link" title="mystronggame.main_menu.main_background">main<wbr></wbr>_background</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#screen" class="internal-link" title="mystronggame.main_menu.screen">screen</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#WIDTH" class="internal-link" title="mystronggame.main_menu.WIDTH">WIDTH</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Package</span>
+        <code><a href="index.html" class="internal-link" title="The parent of this module">mystronggame</a></code> 
+      </div>
+      
+      <div>
+        
+
+        <div class="childrenKindTitle">Modules</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="mystronggame.button.html" class="internal-link" title="mystronggame.button">button</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="mystronggame.main.html" class="internal-link" title="mystronggame.main">main</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="mystronggame.main_menu.html" class="internal-link" title="mystronggame.main_menu">main<wbr></wbr>_menu</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="mystronggame.menu_test.html" class="internal-link" title="mystronggame.menu_test">menu<wbr></wbr>_test</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+        
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">mystronggame</a></code><wbr></wbr>.<code><a href="mystronggame.main_menu.html" class="internal-link" title="mystronggame.main_menu">main_menu</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id5">
+  
+  
+  <tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#change_vide_mode" class="internal-link" title="mystronggame.main_menu.change_vide_mode">change<wbr></wbr>_vide<wbr></wbr>_mode</a></code></td>
+    <td>Изменяет режим видео и устанавливает глобальные переменные screen и main_background</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#fade" class="internal-link" title="mystronggame.main_menu.fade">fade</a></code></td>
+    <td>Функция Fade выполняет анимацию затухания текущего экрана. Уровень прозрачности анимации обновляется до тех пор, пока она не станет полностью затемненной. Анимация применяется к главному экрану с помощью библиотеки pygame...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#main_menu" class="internal-link" title="mystronggame.main_menu.main_menu">main<wbr></wbr>_menu</a></code></td>
+    <td>Функция mainmenu() отвечает за создание и отображение интерфейса главного меню игры. Она инициализирует и обрабатывает кнопки запуска, настройки и выхода, а также их соответствующие функции Функция запускает цикл while для постоянного обновления и отображения главного меню, включая эффекты наведения кнопки и позиционирования курсора мыши...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#new_game" class="internal-link" title="mystronggame.main_menu.new_game">new<wbr></wbr>_game</a></code></td>
+    <td>Функция new_game инициализирует новую игру в приложении Онa создает игровые кнопки и настраивает основной игровой цикл для обработки игровых событий и рендеринга игрового экрана. В игровом цикле он постоянно проверяет игровые события, такие как нажатие кнопок, наведение мыши и ввод с клавиатуры...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#settings_menu" class="internal-link" title="mystronggame.main_menu.settings_menu">settings<wbr></wbr>_menu</a></code></td>
+    <td>Функция создает меню настроек с кнопками аудио, видео и «Назад» Она включает в себя цикл while, который отображает фон и кнопки, а также обработку событий для нажатия кнопок или использования сочетаний клавиш...</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#video_settings_menu" class="internal-link" title="mystronggame.main_menu.video_settings_menu">video<wbr></wbr>_settings<wbr></wbr>_menu</a></code></td>
+    <td>Функция создает меню настроек видео с тремя кнопками режима видео и кнопкой «Назад» Онa включает в себя цикл while, который отображает фон и кнопки, а также обработку событий для нажатия кнопок или использования сочетаний клавиш...</td>
+  </tr><tr class="constant">
+    
+    <td>Constant</td>
+    <td><code><a href="#MAX_FPS" class="internal-link" title="mystronggame.main_menu.MAX_FPS">MAX<wbr></wbr>_FPS</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#clock" class="internal-link" title="mystronggame.main_menu.clock">clock</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#cursor" class="internal-link" title="mystronggame.main_menu.cursor">cursor</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#HEIGHT" class="internal-link" title="mystronggame.main_menu.HEIGHT">HEIGHT</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#main_background" class="internal-link" title="mystronggame.main_menu.main_background">main<wbr></wbr>_background</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#screen" class="internal-link" title="mystronggame.main_menu.screen">screen</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#WIDTH" class="internal-link" title="mystronggame.main_menu.WIDTH">WIDTH</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basefunction">
+  
+  
+  <a name="mystronggame.main_menu.change_vide_mode">
+    
+  </a>
+  <a name="change_vide_mode">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">change_vide_mode</span><span class="function-signature">(w, h, fullscreen=0)</span>:
+    
+    <a class="headerLink" href="#change_vide_mode" title="mystronggame.main_menu.change_vide_mode">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Изменяет режим видео и устанавливает глобальные переменные screen и main_background</p>
+<p>:param w:Ширина видеорежима
+:param h:Высота видеорежима
+:param fullscreen:Указывает, должен ли видеорежим быть полноэкранным.
+:type w:int
+:type h:int
+:type fullscreen:int
+:returns: None
+:rtype: None
+:raises None</p>
+</div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="mystronggame.main_menu.fade">
+    
+  </a>
+  <a name="fade">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">fade</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#fade" title="mystronggame.main_menu.fade">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция Fade выполняет анимацию затухания текущего экрана.
+Уровень прозрачности анимации обновляется до тех пор, пока она не станет полностью затемненной.
+Анимация применяется к главному экрану с помощью библиотеки pygame.Функция работает
+в непрерывном цикле до тех пор, пока не будет достигнуто состояние.
+FRAMEHEIGHT и FRAMEWIDTH используются для создания поверхности, необходимой для анимации,
+а FPS (кадров в секунду) ограничивается для обеспечения плавности.</p>
+<p>:param : None
+:type : None
+:returns: None
+:rtype: None
+:raises None</p>
+</div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="mystronggame.main_menu.main_menu">
+    
+  </a>
+  <a name="main_menu">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">main_menu</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#main_menu" title="mystronggame.main_menu.main_menu">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция mainmenu() отвечает за создание и отображение интерфейса главного меню игры.
+Она инициализирует и обрабатывает кнопки запуска, настройки и выхода, а также их соответствующие функции
+Функция запускает цикл while для постоянного обновления и отображения главного меню, включая эффекты
+наведения кнопки и позиционирования курсора мыши</p>
+<p>:param : None
+:type : None
+:returns: None
+:rtype: None
+:raises None</p>
+</div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="mystronggame.main_menu.new_game">
+    
+  </a>
+  <a name="new_game">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">new_game</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#new_game" title="mystronggame.main_menu.new_game">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция new_game инициализирует новую игру в приложении
+Онa создает игровые кнопки и настраивает основной игровой цикл
+для обработки игровых событий и рендеринга игрового экрана.
+В игровом цикле он постоянно проверяет игровые события, такие как
+нажатие кнопок, наведение мыши и ввод с клавиатуры.Если обнаружено событие выхода или</p>
+<blockquote>
+событие клавиши выхода, игра завершается.Онa также обрабатывает события
+мыши для кнопки «Назад», позволяя пользователю вернуться в главное меню.
+Когда функция выполняется, она отображает игровой экран и обновляет изображение.</blockquote>
+<p>:param : None
+:type : None
+:returns: None
+:rtype: None
+:raises None</p>
+</div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="mystronggame.main_menu.settings_menu">
+    
+  </a>
+  <a name="settings_menu">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">settings_menu</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#settings_menu" title="mystronggame.main_menu.settings_menu">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция создает меню настроек с кнопками аудио, видео и «Назад»
+Она включает в себя цикл while, который отображает фон и кнопки, а
+также обработку событий для нажатия кнопок или использования сочетаний клавиш.
+Пользователь может перемещаться по меню и изменять настройки.
+При нажатии кнопки аудио или видео отображаются соответствующие меню настроек, а
+кнопка «Назад» возвращает пользователя в предыдущее меню.
+Функция также обрабатывает наведение мыши и отображение курсора.</p>
+<p>:param : None
+:type : None
+:returns: None
+:rtype: None
+:raises None</p>
+</div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="mystronggame.main_menu.video_settings_menu">
+    
+  </a>
+  <a name="video_settings_menu">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">video_settings_menu</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#video_settings_menu" title="mystronggame.main_menu.video_settings_menu">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Функция создает меню настроек видео с тремя кнопками режима видео и кнопкой «Назад»
+Онa включает в себя цикл while, который отображает фон и кнопки, а также обработку событий для нажатия кнопок
+или использования сочетаний клавиш.Пользователь может выбирать различные режимы видео с помощью кнопок,
+а кнопка «Назад» возвращает пользователя в предыдущее меню.Функция также обрабатывает наведение мыши, отображение курсора и обновление экрана.</p>
+<p>:param : None
+:type : None
+:returns: None
+:rtype: None
+:raises None</p>
+</div>
+  </div>
+</div><div class="baseconstant">
+  
+  
+  <a name="mystronggame.main_menu.MAX_FPS">
+    
+  </a>
+  <a name="MAX_FPS">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">MAX_FPS</span>: <code>int</code> =
+    
+    <a class="headerLink" href="#MAX_FPS" title="mystronggame.main_menu.MAX_FPS">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    <table class="valueTable"><tr class="fieldStart"><td class="fieldName">Value</td></tr><tr><td><pre class="constant-value"><code>60</code></pre></td></tr></table>
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="mystronggame.main_menu.clock">
+    
+  </a>
+  <a name="clock">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">clock</span> =
+    
+    <a class="headerLink" href="#clock" title="mystronggame.main_menu.clock">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="mystronggame.main_menu.cursor">
+    
+  </a>
+  <a name="cursor">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">cursor</span> =
+    
+    <a class="headerLink" href="#cursor" title="mystronggame.main_menu.cursor">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="mystronggame.main_menu.HEIGHT">
+    
+  </a>
+  <a name="HEIGHT">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">HEIGHT</span> =
+    
+    <a class="headerLink" href="#HEIGHT" title="mystronggame.main_menu.HEIGHT">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="mystronggame.main_menu.main_background">
+    
+  </a>
+  <a name="main_background">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">main_background</span> =
+    
+    <a class="headerLink" href="#main_background" title="mystronggame.main_menu.main_background">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="mystronggame.main_menu.screen">
+    
+  </a>
+  <a name="screen">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">screen</span> =
+    
+    <a class="headerLink" href="#screen" title="mystronggame.main_menu.screen">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="mystronggame.main_menu.WIDTH">
+    
+  </a>
+  <a name="WIDTH">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">WIDTH</span> =
+    
+    <a class="headerLink" href="#WIDTH" title="mystronggame.main_menu.WIDTH">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container">
+    <a href="index.html">API Documentation</a> for mystronggame,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    23.9.1 at 2023-12-16 15:03:32.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>

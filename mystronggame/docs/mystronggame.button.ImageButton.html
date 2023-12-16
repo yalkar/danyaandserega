@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>mystronggame.button.ImageButton</title>
+    <meta name="generator" content="pydoctor 23.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          mystronggame <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div class="hint" id="search-help-box">
+          <p class="rst-last">
+      
+            Search bar offers the following options:
+            <ul>   
+                <li>
+                  <strong>Term presence.</strong> The below example searches for documents that 
+                    must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                </li> 
+
+                <li>
+                  <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                </li> 
+
+                <li>
+                  <strong>Search in specific fields.</strong> The following search matches all objects 
+                  in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+
+                  <p>
+                    Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                    Last two fields are only applicable if "search in docstrings" is enabled.
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Fuzzy matches.</strong> The following search matches all documents 
+                  that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                </li>
+            </ul>
+
+          </p>
+        </div>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 8px;">
+          <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="mystronggame.button.ImageButton.html" class="internal-link" title="This class"><wbr></wbr>Image<wbr></wbr>Button</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="mystronggame.button.ImageButton.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#check_hover" class="internal-link" title="mystronggame.button.ImageButton.check_hover">check<wbr></wbr>_hover</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#draw" class="internal-link" title="mystronggame.button.ImageButton.draw">draw</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#handle_event" class="internal-link" title="mystronggame.button.ImageButton.handle_event">handle<wbr></wbr>_event</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#set_pos" class="internal-link" title="mystronggame.button.ImageButton.set_pos">set<wbr></wbr>_pos</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#height" class="internal-link" title="mystronggame.button.ImageButton.height">height</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#hover_image" class="internal-link" title="mystronggame.button.ImageButton.hover_image">hover<wbr></wbr>_image</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#image" class="internal-link" title="mystronggame.button.ImageButton.image">image</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#is_hovered" class="internal-link" title="mystronggame.button.ImageButton.is_hovered">is<wbr></wbr>_hovered</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#rect" class="internal-link" title="mystronggame.button.ImageButton.rect">rect</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sound" class="internal-link" title="mystronggame.button.ImageButton.sound">sound</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#text" class="internal-link" title="mystronggame.button.ImageButton.text">text</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#width" class="internal-link" title="mystronggame.button.ImageButton.width">width</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#x" class="internal-link" title="mystronggame.button.ImageButton.x">x</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#y" class="internal-link" title="mystronggame.button.ImageButton.y">y</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="mystronggame.button.html" class="internal-link" title="The parent of this class">button</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="mystronggame.button.ImageButton.html" class="internal-link" title="mystronggame.button.ImageButton"><wbr></wbr>Image<wbr></wbr>Button</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        
+         
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">mystronggame</a></code><wbr></wbr>.<code><a href="mystronggame.button.html" class="internal-link" title="mystronggame.button">button</a></code><wbr></wbr>.<code><a href="mystronggame.button.ImageButton.html" class="internal-link" title="mystronggame.button.ImageButton">ImageButton</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">ImageButton</span>:</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="mystronggame.button.ImageButton.__init__">ImageButton(x, y, width, height, ...)</a></code></p>
+          <p><a href="classIndex.html#mystronggame.button.ImageButton">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Класс для создания интерактивной кнопки изображения с дополнительным эффектом наведения и звуком.
+:param x: координата x кнопки
+:param y: координата y кнопки
+:param width: ширина кнопки
+:param height: высота кнопки
+:param text: текст, отображаемый на кнопке
+:param image_path: путь к файлу изображения кнопки
+:param hover_image_path:путь к файлу альтернативного изображения кнопки для эффекта наведения
+:param sound_path:путь к файлу звукового эффекта, который будет воспроизводиться при нажатии кнопки
+:type x:int
+:type y:int
+:type width:int
+:type height:int
+:type text:str
+:type image_path:str
+:type hover_image_path:str, optional
+:type sound_path:str, optional
+:returns: None
+:rtype: None
+:raises None</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id3">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="mystronggame.button.ImageButton.__init__">__init__</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#check_hover" class="internal-link" title="mystronggame.button.ImageButton.check_hover">check<wbr></wbr>_hover</a></code></td>
+    <td>Проверяет, наведен ли курсор мыши на элемент</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#draw" class="internal-link" title="mystronggame.button.ImageButton.draw">draw</a></code></td>
+    <td>Отображает элемент интерфейса на экране</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#handle_event" class="internal-link" title="mystronggame.button.ImageButton.handle_event">handle<wbr></wbr>_event</a></code></td>
+    <td>Обрабатывает события для элемента интерфейса :param event: объект события pygame :type event: class :returns: None :rtype: None :raises None :Side Effects:Воспроизводит звуковой эффект, если указанное событие является нажатием левой кнопки мыши над...</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#set_pos" class="internal-link" title="mystronggame.button.ImageButton.set_pos">set<wbr></wbr>_pos</a></code></td>
+    <td>Метод set_pos устанавливает позицию обьекта по горизонтальной x и вертикальной y координатам :param x: Горизонтальная координата позиции обьекта :param y: Вертикальная координата позиция :type x:int :type y: int :returns: None :rtype: None :raises None...</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#height" class="internal-link" title="mystronggame.button.ImageButton.height">height</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#hover_image" class="internal-link" title="mystronggame.button.ImageButton.hover_image">hover<wbr></wbr>_image</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#image" class="internal-link" title="mystronggame.button.ImageButton.image">image</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#is_hovered" class="internal-link" title="mystronggame.button.ImageButton.is_hovered">is<wbr></wbr>_hovered</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#rect" class="internal-link" title="mystronggame.button.ImageButton.rect">rect</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#sound" class="internal-link" title="mystronggame.button.ImageButton.sound">sound</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#text" class="internal-link" title="mystronggame.button.ImageButton.text">text</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#width" class="internal-link" title="mystronggame.button.ImageButton.width">width</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#x" class="internal-link" title="mystronggame.button.ImageButton.x">x</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#y" class="internal-link" title="mystronggame.button.ImageButton.y">y</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="mystronggame.button.ImageButton.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, x, y, width, height, text, image_path, hover_image_path=None, sound_path=None)</span>:
+    
+    <a class="headerLink" href="#__init__" title="mystronggame.button.ImageButton.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="mystronggame.button.ImageButton.check_hover">
+    
+  </a>
+  <a name="check_hover">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">check_hover</span><span class="function-signature">(self, mouse_pos)</span>:
+    
+    <a class="headerLink" href="#check_hover" title="mystronggame.button.ImageButton.check_hover">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Проверяет, наведен ли курсор мыши на элемент</p>
+<p>:raises None</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">mouse<wbr></wbr>_pos:</span>tuple</td><td class="fieldArgDesc">кортеж с координатами положения курсора мыши</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">None</td><td class="fieldArgDesc">None</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="mystronggame.button.ImageButton.draw">
+    
+  </a>
+  <a name="draw">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">draw</span><span class="function-signature">(self, screen)</span>:
+    
+    <a class="headerLink" href="#draw" title="mystronggame.button.ImageButton.draw">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Отображает элемент интерфейса на экране</p>
+<p>:raises None</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">screen:</span>class</td><td class="fieldArgDesc">объект отображения pygame, на котором будет отображаться элемент</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">None</td><td class="fieldArgDesc">None</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="mystronggame.button.ImageButton.handle_event">
+    
+  </a>
+  <a name="handle_event">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">handle_event</span><span class="function-signature">(self, event)</span>:
+    
+    <a class="headerLink" href="#handle_event" title="mystronggame.button.ImageButton.handle_event">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Обрабатывает события для элемента интерфейса
+:param event: объект события pygame
+:type event: class
+:returns: None
+:rtype: None
+:raises None
+:Side Effects:Воспроизводит звуковой эффект, если указанное событие является нажатием левой кнопки мыши над</p>
+<blockquote>
+элементом интерфейса с установленным флагом is_hovered в True. Далее поднимает событие pygame.USEREVENT с
+передачей элемента интерфейса в качестве атрибута кнопки.</blockquote>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="mystronggame.button.ImageButton.set_pos">
+    
+  </a>
+  <a name="set_pos">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">set_pos</span><span class="function-signature">(self, x, y=None)</span>:
+    
+    <a class="headerLink" href="#set_pos" title="mystronggame.button.ImageButton.set_pos">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Метод set_pos устанавливает позицию обьекта по горизонтальной x и
+вертикальной y координатам
+:param x: Горизонтальная координата позиции обьекта
+:param y: Вертикальная координата позиция
+:type x:int
+:type y: int
+:returns: None
+:rtype: None
+:raises None</p></div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="mystronggame.button.ImageButton.height">
+    
+  </a>
+  <a name="height">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">height</span> =
+    
+    <a class="headerLink" href="#height" title="mystronggame.button.ImageButton.height">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="mystronggame.button.ImageButton.hover_image">
+    
+  </a>
+  <a name="hover_image">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">hover_image</span> =
+    
+    <a class="headerLink" href="#hover_image" title="mystronggame.button.ImageButton.hover_image">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="mystronggame.button.ImageButton.image">
+    
+  </a>
+  <a name="image">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">image</span> =
+    
+    <a class="headerLink" href="#image" title="mystronggame.button.ImageButton.image">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="mystronggame.button.ImageButton.is_hovered">
+    
+  </a>
+  <a name="is_hovered">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">is_hovered</span> =
+    
+    <a class="headerLink" href="#is_hovered" title="mystronggame.button.ImageButton.is_hovered">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="mystronggame.button.ImageButton.rect">
+    
+  </a>
+  <a name="rect">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">rect</span> =
+    
+    <a class="headerLink" href="#rect" title="mystronggame.button.ImageButton.rect">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="mystronggame.button.ImageButton.sound">
+    
+  </a>
+  <a name="sound">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">sound</span> =
+    
+    <a class="headerLink" href="#sound" title="mystronggame.button.ImageButton.sound">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="mystronggame.button.ImageButton.text">
+    
+  </a>
+  <a name="text">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">text</span> =
+    
+    <a class="headerLink" href="#text" title="mystronggame.button.ImageButton.text">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="mystronggame.button.ImageButton.width">
+    
+  </a>
+  <a name="width">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">width</span> =
+    
+    <a class="headerLink" href="#width" title="mystronggame.button.ImageButton.width">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="mystronggame.button.ImageButton.x">
+    
+  </a>
+  <a name="x">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">x</span> =
+    
+    <a class="headerLink" href="#x" title="mystronggame.button.ImageButton.x">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="mystronggame.button.ImageButton.y">
+    
+  </a>
+  <a name="y">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">y</span> =
+    
+    <a class="headerLink" href="#y" title="mystronggame.button.ImageButton.y">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container">
+    <a href="index.html">API Documentation</a> for mystronggame,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    23.9.1 at 2023-12-16 15:03:32.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
